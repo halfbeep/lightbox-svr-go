@@ -10,7 +10,7 @@ import (
 
 func main() {
 	rootDir := flag.String("d", "", "Root storage directory")
-	port := flag.Int("p", 80, "Service port")
+	port := flag.Int("p", 8080, "Service port")
 	host := flag.String("i", "0.0.0.0", "Service network interface")
 	flag.Parse()
 
