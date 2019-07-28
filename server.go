@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"flag"
 	"fmt"
 	"log"
@@ -10,7 +11,7 @@ import (
 
 func main() {
 	rootDir := flag.String("d", "", "Root storage directory")
-	port := ":" + os.Getenv("PORT")
+	port := flag.String("p", ":" + os.Getenv("PORT"), "Service Port")
 	host := flag.String("i", "0.0.0.0", "Service network interface")
 	flag.Parse()
 
