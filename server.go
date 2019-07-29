@@ -7,7 +7,7 @@ import (
 	"log"
 	"strconv"
 
-	"halfbeep/light/opds"
+	"github.com/halfbeep/lightbox-svr-go/opds"
 )
 
 func getPort() int {
