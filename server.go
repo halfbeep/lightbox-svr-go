@@ -7,7 +7,7 @@ import (
 	"log"
 	"strconv"
 
-	"github.com/vasyahuyasa/july/opds"
+	"halfbeep/light/opds"
 )
 
 func getPort() int {
@@ -19,7 +19,7 @@ func getPort() int {
 			fmt.Println(err)
 			os.Exit(2)
 			}
-		return p 
+		return p
 	}
 	return 8080
 }
