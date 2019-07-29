@@ -25,7 +25,7 @@ func getPort() int {
 }
 
 func main() {
-	rootDir := flag.String("d", "", "Root storage directory")
+	rootDir := flag.String("d", "docStore/", "Root storage directory")
 	port := flag.Int("p", getPort(), "Service port")
 	host := flag.String("i", "0.0.0.0", "Service network interface")
 	flag.Parse()
